@@ -1,5 +1,7 @@
 package simulate
 
+// https://leetcode-cn.com/problems/fraction-to-recurring-decimal/
+
 import (
 	"strconv"
 )
