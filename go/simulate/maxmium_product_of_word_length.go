@@ -5,7 +5,7 @@ import "math"
 // https://leetcode-cn.com/problems/maximum-product-of-word-lengths/
 
 func maxProduct(words []string) int {
-	mask := make(map[int]int, 0)
+	mask := make(map[int]int)
 
 	for _, word := range words {
 		m := 0

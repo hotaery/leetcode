@@ -19,14 +19,14 @@ func getHint(secret string, guess string) string {
 		return string(ans)
 	}
 
-	m := make(map[int]int, 0)
+	m := make(map[int]int)
 	for i := 0; i < n; i++ {
 		if secret[i] == guess[i] {
 			continue
 		}
 		a := int(secret[i] - '0')
 		b := int(guess[i] - '0')
-		m[a]++ 
+		m[a]++
 		if m[a] <= 0 {
 			cows++
 		}
