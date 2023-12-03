@@ -20,10 +20,12 @@ include_directories(
 file(GLOB_RECURSE UTILS_SOURCES "${PROJECT_SOURCE_DIR}/utils/*.cpp")
 file(GLOB_RECURSE GRAPH_SOURCES "${PROJECT_SOURCE_DIR}/graph/*.cpp")
 file(GLOB_RECURSE INIT_SOURCES  "${PROJECT_SOURCE_DIR}/init/*.cpp")
+file(GLOB_RECURSE INTERVAL_SOURCES "${PROJECT_SOURCE_DIR}/interval/*.cpp")
 
 add_library(leetcode-lib STATIC "${UTILS_SOURCES}" 
                                 "${GRAPH_SOURCES}"
-                                "${INIT_SOURCES}")
+                                "${INIT_SOURCES}"
+                                "${INTERVAL_SOURCES}")
 
 add_executable(leetcode "${PROJECT_SOURCE_DIR}/main.cpp")
 target_link_libraries(leetcode leetcode-lib)
@@ -49,6 +51,10 @@ file(COPY ${PROJECT_SOURCE_DIR}/init/
      FILES_MATCHING
      PATTERN "*.h")     
 
+file(COPY ${PROJECT_SOURCE_DIR}/interval/
+     DESTINATION ${CMAKE_INSTALL_PREFIX}/output/include/interval
+     FILES_MATCHING
+     PATTERN "*.h")    
 
 install(TARGETS leetcode leetcode-lib
     RUNTIME DESTINATION output/bin
