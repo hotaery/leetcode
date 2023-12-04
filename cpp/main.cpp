@@ -13,10 +13,6 @@ void usage() {
               << std::endl;
 }
 
-void init() {
-    leetcode::InitGraph();
-}
-
 int main(int argc, char* argv[]) {
     char* curr = strtok(argv[0], "/");
     while (curr) {
@@ -29,7 +25,7 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    init();
+    leetcode::Init(); 
     std::string problem = argv[1];
     std::shared_ptr<leetcode::Task> task = 
         leetcode::TaskRegistery::GetInstance()->GetTask(problem);

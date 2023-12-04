@@ -4,6 +4,11 @@
 namespace leetcode {
 
 void InitGraph();
+void InitInterval();
+inline void Init() {
+    InitGraph();
+    InitInterval();
+}
 
 } // namespace leetcode
 

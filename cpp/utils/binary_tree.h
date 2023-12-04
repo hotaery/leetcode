@@ -20,6 +20,8 @@ void DestroyBinaryTree(TreeNode* root);
 
 std::string SerializeBinaryTree(const TreeNode* root);
 
+bool BinaryTreeEqual(const TreeNode* lhs, const TreeNode* rhs);
+
 } // namespace leetcode
 
 #endif

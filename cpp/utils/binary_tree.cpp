@@ -81,4 +81,16 @@ std::string SerializeBinaryTree(const TreeNode* root) {
     return j.dump();
 }
 
+bool BinaryTreeEqual(const TreeNode* lhs, const TreeNode* rhs) {
+    if (!lhs || !rhs) {
+        return !lhs && !rhs;
+    }
+    if (lhs->val != rhs->val) {
+        return false;
+    }
+    bool left = BinaryTreeEqual(lhs->left, rhs->left);
+    bool right = left && BinaryTreeEqual(lhs->right, rhs->right);
+    return left && right;
+}
+
 } // namespace leetcode
