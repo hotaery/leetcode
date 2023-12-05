@@ -89,8 +89,7 @@ void MinimumFuelCostToReportToTheCapitalTask::InitTestCase() {
 4
 [[0,1],[1,2]]
 3
-2
-)";
+2)";
     std::istringstream stream(test_case_str);
     while (stream) {
         std::string roads_str;

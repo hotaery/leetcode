@@ -1,3 +1,4 @@
+#include "dp/coin_change_2.h"
 #include "init/init.h"
 #include "graph/binary_tree_maximum_path_sum.h"
 #include "graph/binary_search_tree_to_greater_sum_tree.h"
@@ -23,6 +24,12 @@ void InitGraph() {
 
 void InitInterval() {
     TaskRegistery::GetInstance()->RegisterTask("53", &__dummy_maximum_subarray_task);
+}
+
+static CoinChange2Task __dummy_coin_change_2_task;
+
+void InitDP() {
+    TaskRegistery::GetInstance()->RegisterTask("518", &__dummy_coin_change_2_task);
 }
 
 } // leetcode
