@@ -6,10 +6,12 @@ namespace leetcode {
 void InitGraph();
 void InitInterval();
 void InitDP();
+void InitMath();
 inline void Init() {
     InitGraph();
     InitInterval();
     InitDP();
+    InitMath();
 }
 
 } // namespace leetcode

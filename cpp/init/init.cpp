@@ -5,6 +5,7 @@
 #include "graph/minimum_fuel_cost_to_report_to_the_capital.h"
 #include "graph/minimize_the_total_price_of_the_trips.h"
 #include "graph/word_ladder.h"
+#include "math/max_points_on_a_line.h"
 #include "interval/maximum_subarray.h"
 #include "utils/regsitery.h"
 
@@ -33,6 +34,12 @@ static CoinChange2Task __dummy_coin_change_2_task;
 
 void InitDP() {
     TaskRegistery::GetInstance()->RegisterTask("518", &__dummy_coin_change_2_task);
+}
+
+static MaxPointsOnALineTask __dummy_max_points_on_a_line_task;
+
+void InitMath() {
+    TaskRegistery::GetInstance()->RegisterTask("149", &__dummy_max_points_on_a_line_task);
 }
 
 } // leetcode
