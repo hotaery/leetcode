@@ -23,13 +23,15 @@ file(GLOB_RECURSE INIT_SOURCES  "${PROJECT_SOURCE_DIR}/init/*.cpp")
 file(GLOB_RECURSE INTERVAL_SOURCES "${PROJECT_SOURCE_DIR}/interval/*.cpp")
 file(GLOB_RECURSE DP_SOURCES "${PROJECT_SOURCE_DIR}/dp/*.cpp")
 file(GLOB_RECURSE MATH_SOURCES "${PROJECT_SOURCE_DIR}/math/*.cpp")
+file(GLOB_RECURSE BACKTRACE_SOURCES "${PROJECT_SOURCE_DIR}/backtrace/*.cpp")
 
 add_library(leetcode-lib STATIC "${UTILS_SOURCES}" 
                                 "${GRAPH_SOURCES}"
                                 "${INIT_SOURCES}"
                                 "${INTERVAL_SOURCES}"
                                 "${DP_SOURCES}"
-                                "${MATH_SOURCES}")
+                                "${MATH_SOURCES}"
+                                "${BACKTRACE_SOURCES}")
 
 add_executable(leetcode "${PROJECT_SOURCE_DIR}/main.cpp")
 target_link_libraries(leetcode leetcode-lib)
@@ -70,6 +72,10 @@ file(COPY ${PROJECT_SOURCE_DIR}/math/
      FILES_MATCHING
      PATTERN "*.h")   
 
+file(COPY ${PROJECT_SOURCE_DIR}/backtrace/
+     DESTINATION ${CMAKE_INSTALL_PREFIX}/output/include/backtrace
+     FILES_MATCHING
+     PATTERN "*.h") 
 
 install(TARGETS leetcode leetcode-lib
     RUNTIME DESTINATION output/bin

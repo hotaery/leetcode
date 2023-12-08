@@ -1,4 +1,5 @@
 #include "init/init.h"
+#include "backtrace/word_search_2.h"
 #include "dp/coin_change_2.h"
 #include "dp/dungeon_game.h"
 #include "dp/maximum_earnings_from_taxi.h"
@@ -49,6 +50,12 @@ static MaxPointsOnALineTask __dummy_max_points_on_a_line_task;
 
 void InitMath() {
     TaskRegistery::GetInstance()->RegisterTask("149", &__dummy_max_points_on_a_line_task);
+}
+
+static WordSearch2Task __dummy_word_search_2_task;
+
+void InitBacktrace() {
+    TaskRegistery::GetInstance()->RegisterTask("212", &__dummy_word_search_2_task);
 }
 
 } // leetcode
