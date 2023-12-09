@@ -10,6 +10,7 @@
 #include "graph/reorder_routes_to_make_all_paths_lead_to_the_city_zero.h"
 #include "graph/word_ladder.h"
 #include "math/max_points_on_a_line.h"
+#include "math/next_greater_numerically_balanced_number.h"
 #include "interval/maximum_subarray.h"
 #include "utils/regsitery.h"
 
@@ -47,9 +48,11 @@ void InitDP() {
 }
 
 static MaxPointsOnALineTask __dummy_max_points_on_a_line_task;
+static NextGreaterNumericallyBalancedNumberTask __dummy_next_greater_numerically_balanced_number_task;
 
 void InitMath() {
     TaskRegistery::GetInstance()->RegisterTask("149", &__dummy_max_points_on_a_line_task);
+    TaskRegistery::GetInstance()->RegisterTask("2048", &__dummy_next_greater_numerically_balanced_number_task);
 }
 
 static WordSearch2Task __dummy_word_search_2_task;
