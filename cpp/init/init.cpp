@@ -13,6 +13,7 @@
 #include "math/max_points_on_a_line.h"
 #include "math/next_greater_numerically_balanced_number.h"
 #include "interval/maximum_subarray.h"
+#include "interval/the_skline_problem.h"
 #include "utils/regsitery.h"
 
 namespace leetcode {
@@ -36,8 +37,11 @@ void InitGraph() {
     TaskRegistery::GetInstance()->RegisterTask("1631", &__dummy_path_with_minimum_effort_task);
 }
 
+static TheSklineProblemTask __dummy_the_skline_problem_task;
+
 void InitInterval() {
     TaskRegistery::GetInstance()->RegisterTask("53", &__dummy_maximum_subarray_task);
+    TaskRegistery::GetInstance()->RegisterTask("218", &__dummy_the_skline_problem_task);
 }
 
 static CoinChange2Task __dummy_coin_change_2_task;

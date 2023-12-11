@@ -13,3 +13,6 @@ make -C build install
 ### graph
 - [1631](./graph/path_with_minimum_effort.h)
 - [2646](./graph/minimize_the_total_price_of_the_trips.h)
+
+### interval
+- [218](./interval/the_skiline_problem.h)
