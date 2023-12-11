@@ -10,4 +10,6 @@ make -C build install
 
 ## Puzzle List
 
+### graph
+- [1631](./graph/path_with_minimum_effort.h)
 - [2646](./graph/minimize_the_total_price_of_the_trips.h)
