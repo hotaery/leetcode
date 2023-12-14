@@ -8,12 +8,14 @@ void InitInterval();
 void InitDP();
 void InitMath();
 void InitBacktrace();
+void InitArray();
 inline void Init() {
     InitGraph();
     InitInterval();
     InitDP();
     InitMath();
     InitBacktrace();
+    InitArray();
 }
 
 } // namespace leetcode

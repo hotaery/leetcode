@@ -1,4 +1,5 @@
 #include "init/init.h"
+#include "array/next_greater_element_4.h"
 #include "backtrace/word_search_2.h"
 #include "dp/coin_change_2.h"
 #include "dp/dungeon_game.h"
@@ -66,6 +67,12 @@ static WordSearch2Task __dummy_word_search_2_task;
 
 void InitBacktrace() {
     TaskRegistery::GetInstance()->RegisterTask("212", &__dummy_word_search_2_task);
+}
+
+static NextGreaterElement4Task __dummy_next_greater_element_4_task;
+
+void InitArray() {
+    TaskRegistery::GetInstance()->RegisterTask("2454", &__dummy_next_greater_element_4_task);
 }
 
 } // leetcode
