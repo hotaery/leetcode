@@ -18,4 +18,5 @@ make -C build install
 - [218](./interval/the_skiline_problem.h)
 
 ### array
+- [2131](./array/stamping_the_grid.h)
 - [2454](./array/next_greater_element_4.h)

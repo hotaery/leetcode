@@ -1,5 +1,6 @@
 #include "init/init.h"
 #include "array/next_greater_element_4.h"
+#include "array/stamping_the_grid.h"
 #include "backtrace/word_search_2.h"
 #include "dp/coin_change_2.h"
 #include "dp/dungeon_game.h"
@@ -70,8 +71,10 @@ void InitBacktrace() {
 }
 
 static NextGreaterElement4Task __dummy_next_greater_element_4_task;
+static StampingTheGridTask __dummy_stamping_the_grid_task;
 
 void InitArray() {
+    TaskRegistery::GetInstance()->RegisterTask("2132", &__dummy_stamping_the_grid_task);
     TaskRegistery::GetInstance()->RegisterTask("2454", &__dummy_next_greater_element_4_task);
 }
 
