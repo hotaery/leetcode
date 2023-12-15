@@ -1,4 +1,5 @@
 #include "init/init.h"
+#include "array/contains_duplicate_3.h"
 #include "array/next_greater_element_4.h"
 #include "array/stamping_the_grid.h"
 #include "backtrace/word_search_2.h"
@@ -75,8 +76,10 @@ void InitBacktrace() {
 
 static NextGreaterElement4Task __dummy_next_greater_element_4_task;
 static StampingTheGridTask __dummy_stamping_the_grid_task;
+static ContainsDuplicate3Task __dummy_contains_duplicate_3_task;
 
 void InitArray() {
+    TaskRegistery::GetInstance()->RegisterTask("220", &__dummy_contains_duplicate_3_task);
     TaskRegistery::GetInstance()->RegisterTask("2132", &__dummy_stamping_the_grid_task);
     TaskRegistery::GetInstance()->RegisterTask("2454", &__dummy_next_greater_element_4_task);
 }
