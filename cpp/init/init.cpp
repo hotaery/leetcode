@@ -11,6 +11,7 @@
 #include "graph/minimize_the_total_price_of_the_trips.h"
 #include "graph/path_with_minimum_effort.h"
 #include "graph/reorder_routes_to_make_all_paths_lead_to_the_city_zero.h"
+#include "graph/reverse_odd_levels_of_binary_tree.h"
 #include "graph/word_ladder.h"
 #include "math/max_points_on_a_line.h"
 #include "math/next_greater_numerically_balanced_number.h"
@@ -28,6 +29,7 @@ static MinimumFuelCostToReportToTheCapitalTask __dummy_minimum_fuel_cost_to_repo
 static MinimizeTheTotalPriceOfTheTripsTask __dummy_minimize_the_total_price_of_the_trips_task;
 static ReorderRoutesToMakeAllPathsLeadToTheCityZeroTask __dummy_reorder_routes_to_make_all_paths_lead_to_the_city_zero_task;
 static PathWithMinimumEffortTask __dummy_path_with_minimum_effort_task;
+static ReverseOddLevelsOfBinaryTreeTask __dummy_reverse_odd_levels_of_binary_tree_task;
 
 void InitGraph() {
     TaskRegistery::GetInstance()->RegisterTask("124", &__dummy_binary_tree_maximum_path_sum_task);
@@ -37,6 +39,7 @@ void InitGraph() {
     TaskRegistery::GetInstance()->RegisterTask("2646", &__dummy_minimize_the_total_price_of_the_trips_task);
     TaskRegistery::GetInstance()->RegisterTask("1466", &__dummy_reorder_routes_to_make_all_paths_lead_to_the_city_zero_task);
     TaskRegistery::GetInstance()->RegisterTask("1631", &__dummy_path_with_minimum_effort_task);
+    TaskRegistery::GetInstance()->RegisterTask("2415", &__dummy_reverse_odd_levels_of_binary_tree_task);
 }
 
 static TheSklineProblemTask __dummy_the_skline_problem_task;
