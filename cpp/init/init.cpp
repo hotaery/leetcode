@@ -1,6 +1,7 @@
 #include "init/init.h"
 #include "array/contains_duplicate_3.h"
 #include "array/find_a_peak_element_2.h"
+#include "array/h_index_2.h"
 #include "array/next_greater_element_4.h"
 #include "array/stamping_the_grid.h"
 #include "backtrace/word_search_2.h"
@@ -82,9 +83,11 @@ static NextGreaterElement4Task __dummy_next_greater_element_4_task;
 static StampingTheGridTask __dummy_stamping_the_grid_task;
 static ContainsDuplicate3Task __dummy_contains_duplicate_3_task;
 static FindAPeakElement2Task __dummy_find_a_peak_element_2_task;
+static HIndex2Task __dummy_h_index_2_task;
 
 void InitArray() {
     TaskRegistery::GetInstance()->RegisterTask("220", &__dummy_contains_duplicate_3_task);
+    TaskRegistery::GetInstance()->RegisterTask("275", &__dummy_h_index_2_task);
     TaskRegistery::GetInstance()->RegisterTask("1901", &__dummy_find_a_peak_element_2_task);
     TaskRegistery::GetInstance()->RegisterTask("2132", &__dummy_stamping_the_grid_task);
     TaskRegistery::GetInstance()->RegisterTask("2454", &__dummy_next_greater_element_4_task);
