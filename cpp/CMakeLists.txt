@@ -7,7 +7,7 @@ if(WITH_DEBUG_SYMBOLS)
     set(DEBUG_SYMBOLS "-g")
 endif()
 
-set(CMAKE_CXX_FLAGS "-O0 -pipe -Wall -W -fPIC -std=c++14 -fstrict-aliasing -Wno-invalid-offsetof -Wno-unused-parameter -fno-omit-frame-pointer -Wno-sign-compare")
+set(CMAKE_CXX_FLAGS "-O0 -pipe -Wall -W -fPIC -std=c++14 -fstrict-aliasing -Wno-invalid-offsetof -Wno-unused-parameter -fno-omit-frame-pointer -Wno-sign-compare -Wno-narrowing -Wno-unused-variable")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${DEBUG_SYMBOLS}")
 set(CMAKE_C_FLAGS "-O0 -pipe -Wall -W -fPIC -fstrict-aliasing -Wno-unused-parameter -fno-omit-frame-pointer")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${DEBUG_SYMBOLS}")
