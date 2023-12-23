@@ -5,6 +5,7 @@
 #include "array/h_index_2.h"
 #include "array/minimum_number_of_removals_to_make_mountain_array.h"
 #include "array/next_greater_element_4.h"
+#include "array/remove_stones_to_minimize_the_total.h"
 #include "array/stamping_the_grid.h"
 #include "backtrace/word_search_2.h"
 #include "dp/coin_change_2.h"
@@ -88,12 +89,14 @@ static FindAPeakElement2Task __dummy_find_a_peak_element_2_task;
 static HIndex2Task __dummy_h_index_2_task;
 static BeautifulTowers2Task __dummy_beautiful_towers_2_task;
 static MinimumNumberOfRemovalsToMakeMountainArrayTask __dummy_minimum_number_of_removals_to_make_mountain_array_task;
+static RemoveStonesToMinimizeTheTotalTask __dummy_remove_stones_to_minimize_the_total_task;
 
 void InitArray() {
     TaskRegistery::GetInstance()->RegisterTask("220", &__dummy_contains_duplicate_3_task);
     TaskRegistery::GetInstance()->RegisterTask("275", &__dummy_h_index_2_task);
     TaskRegistery::GetInstance()->RegisterTask("1671", &__dummy_minimum_number_of_removals_to_make_mountain_array_task);
     TaskRegistery::GetInstance()->RegisterTask("1901", &__dummy_find_a_peak_element_2_task);
+    TaskRegistery::GetInstance()->RegisterTask("1962", &__dummy_remove_stones_to_minimize_the_total_task);
     TaskRegistery::GetInstance()->RegisterTask("2132", &__dummy_stamping_the_grid_task);
     TaskRegistery::GetInstance()->RegisterTask("2454", &__dummy_next_greater_element_4_task);
     TaskRegistery::GetInstance()->RegisterTask("2866", &__dummy_beautiful_towers_2_task);
