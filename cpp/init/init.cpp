@@ -20,6 +20,7 @@
 #include "graph/reverse_odd_levels_of_binary_tree.h"
 #include "graph/word_ladder.h"
 #include "math/max_points_on_a_line.h"
+#include "math/minimum_garden_perimeter_to_collect_enough_apples.h"
 #include "math/next_greater_numerically_balanced_number.h"
 #include "interval/count_integers_in_intervals.h"
 #include "interval/maximum_subarray.h"
@@ -70,9 +71,11 @@ void InitDP() {
 
 static MaxPointsOnALineTask __dummy_max_points_on_a_line_task;
 static NextGreaterNumericallyBalancedNumberTask __dummy_next_greater_numerically_balanced_number_task;
+static MinimumGardenPerimeterToCollectEnoughApplesTask __dummy_minimum_garden_perimeter_to_collect_enough_apples_task;
 
 void InitMath() {
     TaskRegistery::GetInstance()->RegisterTask("149", &__dummy_max_points_on_a_line_task);
+    TaskRegistery::GetInstance()->RegisterTask("1954", &__dummy_minimum_garden_perimeter_to_collect_enough_apples_task);
     TaskRegistery::GetInstance()->RegisterTask("2048", &__dummy_next_greater_numerically_balanced_number_task);
 }
 
