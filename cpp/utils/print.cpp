@@ -1,4 +1,5 @@
 #include "utils/print.h"
+#include "utils/binary_tree.h"
 
 namespace leetcode {
 

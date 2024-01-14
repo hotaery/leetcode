@@ -27,6 +27,15 @@ std::shared_ptr<Task> TaskRegistery::GetTask(const std::string& name) const {
     return iter->second->create();
 }
 
+std::vector<std::string> TaskRegistery::ListTask() const {
+    std::vector<std::string> tasks;
+    std::lock_guard<std::mutex> lck(m_);
+    for (auto iter = registery_table_.begin(); iter != registery_table_.end(); ++iter) {
+        tasks.push_back(iter->first);
+    }
+    return tasks;
+}
+
 TaskRegistery* TaskRegistery::GetInstance() {
     static TaskRegistery tr;
     return &tr;

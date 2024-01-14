@@ -5,6 +5,7 @@
 #include <mutex>
 #include <string>
 #include <unordered_map>
+#include <vector>
 
 namespace leetcode {
 
@@ -27,6 +28,7 @@ public:
 
     bool RegisterTask(const std::string& name, Task* task);
     std::shared_ptr<Task> GetTask(const std::string& name) const;
+    std::vector<std::string> ListTask() const;
 
 private:
     TaskRegistery();

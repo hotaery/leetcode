@@ -1,8 +1,6 @@
 #ifndef UTILS_PRINT_H
 #define UTILS_PRINT_H
 
-#include "utils/binary_tree.h"
-
 #include <iostream>
 #include <type_traits>
 #include <vector>
@@ -22,6 +20,7 @@ std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec) {
     return os;
 }
 
+struct TreeNode;
 std::ostream& operator<<(std::ostream& os, const TreeNode* root);
     
 } // namespace leetcode 
