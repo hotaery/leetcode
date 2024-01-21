@@ -13,6 +13,7 @@
 #include "dp/dungeon_game.h"
 #include "dp/maximum_earnings_from_taxi.h"
 #include "dp/maximum_number_that_sum_of_the_price_ls_less_than_or_equak_to_k.h"
+#include "dp/split_array_largest_sum.h"
 #include "graph/binary_tree_maximum_path_sum.h"
 #include "graph/binary_search_tree_to_greater_sum_tree.h"
 #include "graph/minimum_fuel_cost_to_report_to_the_capital.h"
@@ -66,10 +67,12 @@ static CoinChange2Task __dummy_coin_change_2_task;
 static DungeonGameTask __dummy_dungeon_game_task;
 static MaximumEarningsFromTaxiTask __dummy_maximum_earnings_from_task_task;
 static MaximumNumberThatSumOfThePriceLsLessThanOrEqualToKTask __dummy_maximum_number_that_sum_of_the_price_ls_less_than_or_euqal_to_k_task;
+static SplitArrayLargestSumTask __dummy_split_aray_largest_sum_task;
 
 void InitDP() {
     TaskRegistery::GetInstance()->RegisterTask("518", &__dummy_coin_change_2_task);
     TaskRegistery::GetInstance()->RegisterTask("174", &__dummy_dungeon_game_task);
+    TaskRegistery::GetInstance()->RegisterTask("410", &__dummy_split_aray_largest_sum_task);
     TaskRegistery::GetInstance()->RegisterTask("2008", &__dummy_maximum_earnings_from_task_task);
     TaskRegistery::GetInstance()->RegisterTask("100160", &__dummy_maximum_number_that_sum_of_the_price_ls_less_than_or_euqal_to_k_task);
 }
