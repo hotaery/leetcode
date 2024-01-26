@@ -3,6 +3,7 @@
 #include "array/contains_duplicate_3.h"
 #include "array/find_a_peak_element_2.h"
 #include "array/h_index_2.h"
+#include "array/longest_alternating_subarray.h"
 #include "array/minimum_number_of_removals_to_make_mountain_array.h"
 #include "array/next_greater_element_4.h"
 #include "array/remove_stones_to_minimize_the_total.h"
@@ -18,6 +19,7 @@
 #include "graph/binary_search_tree_to_greater_sum_tree.h"
 #include "graph/minimum_fuel_cost_to_report_to_the_capital.h"
 #include "graph/minimize_the_total_price_of_the_trips.h"
+#include "graph/minimum_edge_weight_equilibrium_queries_in_a_tree.h"
 #include "graph/path_with_minimum_effort.h"
 #include "graph/reorder_routes_to_make_all_paths_lead_to_the_city_zero.h"
 #include "graph/reverse_odd_levels_of_binary_tree.h"
@@ -43,6 +45,7 @@ static MinimizeTheTotalPriceOfTheTripsTask __dummy_minimize_the_total_price_of_t
 static ReorderRoutesToMakeAllPathsLeadToTheCityZeroTask __dummy_reorder_routes_to_make_all_paths_lead_to_the_city_zero_task;
 static PathWithMinimumEffortTask __dummy_path_with_minimum_effort_task;
 static ReverseOddLevelsOfBinaryTreeTask __dummy_reverse_odd_levels_of_binary_tree_task;
+static MinimumEdgeWeightEquilibriumQueriesInATreeTask __dummy_minimum_edge_weight_equilibrium_queries_in_a_tree_task;
 
 void InitGraph() {
     TaskRegistery::GetInstance()->RegisterTask("124", &__dummy_binary_tree_maximum_path_sum_task);
@@ -53,6 +56,7 @@ void InitGraph() {
     TaskRegistery::GetInstance()->RegisterTask("1466", &__dummy_reorder_routes_to_make_all_paths_lead_to_the_city_zero_task);
     TaskRegistery::GetInstance()->RegisterTask("1631", &__dummy_path_with_minimum_effort_task);
     TaskRegistery::GetInstance()->RegisterTask("2415", &__dummy_reverse_odd_levels_of_binary_tree_task);
+    TaskRegistery::GetInstance()->RegisterTask("2846", &__dummy_minimum_edge_weight_equilibrium_queries_in_a_tree_task);
 }
 
 static CountIntegersInIntervalsTask __dummy_count_integers_in_intervals_task;
@@ -108,6 +112,7 @@ static HIndex2Task __dummy_h_index_2_task;
 static BeautifulTowers2Task __dummy_beautiful_towers_2_task;
 static MinimumNumberOfRemovalsToMakeMountainArrayTask __dummy_minimum_number_of_removals_to_make_mountain_array_task;
 static RemoveStonesToMinimizeTheTotalTask __dummy_remove_stones_to_minimize_the_total_task;
+static LongestAlternatingSubarrayTask __dummy_longest_alternating_subarray_task;
 
 void InitArray() {
     TaskRegistery::GetInstance()->RegisterTask("220", &__dummy_contains_duplicate_3_task);
@@ -117,6 +122,7 @@ void InitArray() {
     TaskRegistery::GetInstance()->RegisterTask("1962", &__dummy_remove_stones_to_minimize_the_total_task);
     TaskRegistery::GetInstance()->RegisterTask("2132", &__dummy_stamping_the_grid_task);
     TaskRegistery::GetInstance()->RegisterTask("2454", &__dummy_next_greater_element_4_task);
+    TaskRegistery::GetInstance()->RegisterTask("2765", &__dummy_longest_alternating_subarray_task);
     TaskRegistery::GetInstance()->RegisterTask("2866", &__dummy_beautiful_towers_2_task);
 }
 
