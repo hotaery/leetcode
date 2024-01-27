@@ -4,6 +4,7 @@
 #include "array/find_a_peak_element_2.h"
 #include "array/h_index_2.h"
 #include "array/longest_alternating_subarray.h"
+#include "array/maximum_number_of_alloys.h"
 #include "array/minimum_number_of_removals_to_make_mountain_array.h"
 #include "array/next_greater_element_4.h"
 #include "array/remove_stones_to_minimize_the_total.h"
@@ -113,6 +114,7 @@ static BeautifulTowers2Task __dummy_beautiful_towers_2_task;
 static MinimumNumberOfRemovalsToMakeMountainArrayTask __dummy_minimum_number_of_removals_to_make_mountain_array_task;
 static RemoveStonesToMinimizeTheTotalTask __dummy_remove_stones_to_minimize_the_total_task;
 static LongestAlternatingSubarrayTask __dummy_longest_alternating_subarray_task;
+static MaximumNumberOfAlloysTask __dummy_maximum_number_of_alloys_task;
 
 void InitArray() {
     TaskRegistery::GetInstance()->RegisterTask("220", &__dummy_contains_duplicate_3_task);
@@ -124,6 +126,7 @@ void InitArray() {
     TaskRegistery::GetInstance()->RegisterTask("2454", &__dummy_next_greater_element_4_task);
     TaskRegistery::GetInstance()->RegisterTask("2765", &__dummy_longest_alternating_subarray_task);
     TaskRegistery::GetInstance()->RegisterTask("2866", &__dummy_beautiful_towers_2_task);
+    TaskRegistery::GetInstance()->RegisterTask("2861", &__dummy_maximum_number_of_alloys_task);
 }
 
 } // leetcode
